@@ -1,3 +1,4 @@
+from registration import views
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +18,6 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$', views.registration_form, name='registration_form'),
     url(r'^admin/', admin.site.urls),
 ]

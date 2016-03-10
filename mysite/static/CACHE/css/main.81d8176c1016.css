@@ -1,0 +1,7 @@
+/* line 2, /Users/eric/projects/github/hello/mysite/registration/static/scss/main.scss */
+.main {
+  margin-top: 5em;
+  max-width: 600px; }
+  /* line 6, /Users/eric/projects/github/hello/mysite/registration/static/scss/main.scss */
+  .main .error-message {
+    color: #a94442; }

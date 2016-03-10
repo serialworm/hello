@@ -1,0 +1,10 @@
+{% load widget_tweaks %}
+<div class="form-group {% if field.errors %}has-error{% endif %}">
+    <label class="control-label" for="id_{{ field.name }}">{{ field.label }}</label>
+    {% if field.field.required %}
+        {% render_field field|attr:'required:' class="form-control" %}
+    {% else %}
+        {% render_field field class="form-control" %}
+    {% endif %}
+    <div class="error-message">{{ field.errors.as_text }}</div>
+</div>

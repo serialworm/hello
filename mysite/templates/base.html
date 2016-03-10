@@ -1,0 +1,31 @@
+{% load compress static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>User Registration Form</title>
+
+    {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static "scss/main.scss" %}" />
+    {% endcompress %}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css
+
+">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    {% block main %}{% endblock %}
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+
+    {% compress js %}
+    <script src="{% static "js/main.js" %}"></script>
+    {% endcompress %}
+</body>
+</html>

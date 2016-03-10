@@ -1,0 +1,14 @@
+/* line 2, /Users/eric/projects/github/hello/mysite/registration/static/scss/main.scss */
+.main {
+  margin: 5em 0;
+  max-width: 600px; }
+  /* line 6, /Users/eric/projects/github/hello/mysite/registration/static/scss/main.scss */
+  .main .error-message {
+    color: #a94442; }
+  /* line 9, /Users/eric/projects/github/hello/mysite/registration/static/scss/main.scss */
+  .main .submit-btn {
+    margin-top: 3em; }
+    /* line 11, /Users/eric/projects/github/hello/mysite/registration/static/scss/main.scss */
+    .main .submit-btn input {
+      display: block;
+      margin: 0 auto; }
