@@ -3,7 +3,7 @@
 {% block main %}
 <div class="container main">
     <h1>User Registration Form</h1>
-    <form name="registration-form" method="POST">
+    <form name="registration-form" id="registration-form" method="POST">
         {% csrf_token %}
 
         {% with form.first_name as field %}
